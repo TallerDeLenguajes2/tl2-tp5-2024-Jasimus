@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "uWCfLIYWXVFSbmQdrJJoMiPWeQ8+phY0gvFyZrD2PXk=",
+  "Source": "tp5_webApi",
+  "BasePath": "_content/tp5_webApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

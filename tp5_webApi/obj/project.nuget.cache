@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lzJCyYSYzURcBTS4YviN5a+8Y5UYrgEdiFH5tkd4n0sd7FKCjlzexLvsnSh4+c8H6SMkeKOP0rhL75iXn6uEhw==",
+  "dgSpecHash": "iMcV1UqkwXV7x6PYqmRcjQot/4pqTF6M0n7p39V+MZutBCsOZDRNqFNimS7sGDDTKAB7I9TQub8EH8CYEsQ1Kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alumno\\Desktop\\tp5\\tl2-tp5-2024-Jasimus\\tp5_webApi\\tp5_webApi.csproj",
+  "projectFilePath": "C:\\Users\\Alumno\\Desktop\\tp5_tallerII_AdadJuanAugusto\\tl2-tp5-2024-Jasimus\\tp5_webApi\\tp5_webApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alumno\\.nuget\\packages\\microsoft.data.sqlite\\8.0.10\\microsoft.data.sqlite.8.0.10.nupkg.sha512",
     "C:\\Users\\Alumno\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.10\\microsoft.data.sqlite.core.8.0.10.nupkg.sha512",

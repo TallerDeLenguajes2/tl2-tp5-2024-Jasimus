@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Desktop\\tp5\\tl2-tp5-2024-Jasimus\\tp5_webApi\\tp5_webApi.csproj": {}
+    "C:\\Users\\Alumno\\Desktop\\tp5_tallerII_AdadJuanAugusto\\tl2-tp5-2024-Jasimus\\tp5_webApi\\tp5_webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Desktop\\tp5\\tl2-tp5-2024-Jasimus\\tp5_webApi\\tp5_webApi.csproj": {
+    "C:\\Users\\Alumno\\Desktop\\tp5_tallerII_AdadJuanAugusto\\tl2-tp5-2024-Jasimus\\tp5_webApi\\tp5_webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\tp5\\tl2-tp5-2024-Jasimus\\tp5_webApi\\tp5_webApi.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\tp5_tallerII_AdadJuanAugusto\\tl2-tp5-2024-Jasimus\\tp5_webApi\\tp5_webApi.csproj",
         "projectName": "tp5_webApi",
-        "projectPath": "C:\\Users\\Alumno\\Desktop\\tp5\\tl2-tp5-2024-Jasimus\\tp5_webApi\\tp5_webApi.csproj",
+        "projectPath": "C:\\Users\\Alumno\\Desktop\\tp5_tallerII_AdadJuanAugusto\\tl2-tp5-2024-Jasimus\\tp5_webApi\\tp5_webApi.csproj",
         "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Desktop\\tp5\\tl2-tp5-2024-Jasimus\\tp5_webApi\\obj\\",
+        "outputPath": "C:\\Users\\Alumno\\Desktop\\tp5_tallerII_AdadJuanAugusto\\tl2-tp5-2024-Jasimus\\tp5_webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
