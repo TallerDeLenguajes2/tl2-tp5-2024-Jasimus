@@ -11,6 +11,14 @@ namespace Presupuesto_space
         public string NombreDestinatario { get => nombreDestinatario; set => nombreDestinatario = value; }
         public List<PresupuestoDetalle> Detalle { get => detalle; set => detalle = value; }
 
+
+        public Presupuesto(int idPresupuesto, string nombreDestinatario)
+        {
+            detalle = new List<PresupuestoDetalle>();
+            this.idPresupuesto = idPresupuesto;
+            this.nombreDestinatario = nombreDestinatario;
+        }
+
         public int MontoPresupuesto()
         {
             int monto=0;

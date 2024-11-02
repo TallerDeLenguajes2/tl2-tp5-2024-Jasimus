@@ -9,38 +9,43 @@ public class ProductoController : ControllerBase
 {
     private ProductoRepository pr = new ProductoRepository();
 
-    [HttpPost(Name = "Alta_Producto")]
-    public ActionResult AltaProducto(Producto producto)
+    [HttpPost("Alta_Producto")]
+    public IActionResult AltaProducto(Producto producto)
     {
         int cant = pr.CrearProducto(producto);
         if (cant != 0) return Created();
         else return BadRequest();
     }
 
-    [HttpPut(Name = "Modificar_Producto")]
-    public ActionResult ModificarProducto(int id, Producto producto)
+    [HttpPut("Modificar_Producto")]
+    public IActionResult ModificarProducto(int id, Producto producto)
     {
         int cant = pr.ModificarProducto(id, producto);
         if(cant != 0) return Accepted();
         else return BadRequest();
     }
 
-    [HttpGet(Name = "Obtener_Productos")]
-    public ActionResult ListarProductos()
+    [HttpGet("Obtener_Productos")]
+    public IActionResult ListarProductos()
     {
         return Ok(pr.ListarProductos());
     }
 
-    [HttpGet(Name = "detalle_Producto")]
+    [HttpGet("detalle_Producto")]
 
-    public ActionResult DetalleProducto(int id)
+    public IActionResult DetalleProducto(int id)
     {
-        return Ok(pr.ObtenerProducto(id));
+        Producto p = pr.ObtenerProducto(id);
+        if (p != null)
+        {
+            return Ok(p);
+        }
+        else return NotFound();
     }
 
-    [HttpPost(Name = "Eliminar_Producto")]
+    [HttpPost("Eliminar_Producto")]
     
-    public ActionResult EliminarProducto(int id)
+    public IActionResult EliminarProducto(int id)
     {
         int cant = pr.EliminarProducto(id);
         if(cant != 0) return Accepted();

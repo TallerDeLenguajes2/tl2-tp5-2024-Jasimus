@@ -33,8 +33,8 @@ public class ProductoRepository
             string query = "UPDATE Productos SET Descripcion = @descripcion, Precio = @precio WHERE idProducto = @id;";
             
             SqliteCommand command = new SqliteCommand(query, connection);
-            command.Parameters.AddWithValue("@descrpcion", producto.Descripcion);
-            command.Parameters.AddWithValue("@precio",producto.Precio);
+            command.Parameters.AddWithValue("@descripcion", producto.Descripcion);
+            command.Parameters.AddWithValue("@precio", producto.Precio);
             command.Parameters.AddWithValue("@id", id);
 
             return command.ExecuteNonQuery();
@@ -68,6 +68,7 @@ public class ProductoRepository
 
     public Producto ObtenerProducto(int id)
     {
+        Producto producto = null;
         using(SqliteConnection connection = new SqliteConnection(connectionString))
         {
             connection.Open();
@@ -77,7 +78,6 @@ public class ProductoRepository
             SqliteCommand command = new SqliteCommand(query, connection);
             command.Parameters.AddWithValue("@id", id);
 
-            Producto producto = new Producto();
 
             using(var reader = command.ExecuteReader())
             {
@@ -87,9 +87,9 @@ public class ProductoRepository
                 }
             }
 
-            return producto;
             connection.Close();
         }
+        return producto;
     }
 
     public int EliminarProducto(int id)
