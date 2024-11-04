@@ -18,11 +18,20 @@ public class ProductoController : ControllerBase
     }
 
     [HttpPut("Modificar_Producto")]
-    public IActionResult ModificarProducto(int id, Producto producto)
+    public IActionResult ModificarProducto(int id, string descripcion)
     {
-        int cant = pr.ModificarProducto(id, producto);
-        if(cant != 0) return Accepted();
-        else return BadRequest();
+        try
+        {
+            Producto producto = pr.ListarProductos().Single(p => p.IdProducto == id);
+            producto.Descripcion = descripcion;
+            int cant = pr.ModificarProducto(id, producto);
+            if(cant != 0) return Accepted();
+            else return BadRequest();
+        }
+        catch(InvalidOperationException)
+        {
+            return BadRequest();
+        }
     }
 
     [HttpGet("Obtener_Productos")]
